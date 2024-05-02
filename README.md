@@ -1,4 +1,82 @@
-Sure, here's the content properly formatted for copying:
+```markdown
+# Vendor Management System using Django and Django REST Framework
+
+This system will handle vendor profiles, track purchase orders, and calculate vendor performance metrics.
+
+## How to Run This Django Project
+
+### Step 1: Clone the Project
+
+Clone this project using the following command:
+
+```bash
+git clone https://github.com/akshaylocspd/vendor_management.git
+```
+
+### Step 2: Navigate to the Project Directory
+
+```bash
+cd vendor_management
+```
+
+### Step 3: Set Up Virtual Environment
+
+Create a virtual environment and activate it by using the following commands. Ensure you have Python (3.11.7) installed:
+
+```bash
+pip install virtualenv
+virtualenv venv
+
+# On Windows:
+source venv/Scripts/activate
+
+# On macOS/Linux:
+source venv/bin/activate
+```
+
+### Step 4: Install Necessary Python Packages
+
+Install necessary Python packages by running:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 5: Set Up the Database and Run Migrations
+
+Set up the database (if applicable) and run migrations:
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+### Step 6: Create Superuser Account
+
+Create a superuser account to access the admin panel (if needed):
+
+```bash
+python manage.py createsuperuser
+```
+
+### Step 7: Run the Django Application
+
+Finally, run the Django application using the following command:
+
+```bash
+python manage.py runserver
+```
+
+If you encounter any migration-related problems, ensure your database settings are correct and then rerun the migration commands:
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+Now, you should be able to access the Vendor Management System at [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your web browser.
+```
+
 
 ```
 # API Documentation: Vendor Management
