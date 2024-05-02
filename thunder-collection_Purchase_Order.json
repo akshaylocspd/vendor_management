@@ -1,0 +1,148 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Purchase Order",
+    "collectionId": "198ef4f0-f335-453a-b0d3-6be08914c053",
+    "dateExported": "2024-05-01T10:56:57.423Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d11a9e99-dc1e-475e-8a5f-43f04ee21f4e",
+            "colId": "198ef4f0-f335-453a-b0d3-6be08914c053",
+            "containerId": "",
+            "name": "Create a purchase order.",
+            "url": "http://localhost:8000/api/purchase_orders/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-30T10:05:20.315Z",
+            "modified": "2024-05-01T10:46:38.862Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n            \"vendor\": 17,\n            \"order_date\": \"2024-04-30T12:00:00\",\n            \"delivery_date\": \"2024-05-30T12:00:00\",\n            \"items\": {\"item1\": \"description1\", \"item2\": \"description2\"},\n            \"quantity\": 10,\n            \"status\": \"pending\"\n         }",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY2NDAwMzE2LCJpYXQiOjE3MTQ1NjAzMTYsImp0aSI6IjEzZmRmZThiOTY3MzRhZTBhYTcwZTE0MmQwMTc4NzA5IiwidXNlcl9pZCI6MjB9.2SxycDZ4j8bpY2FRaIYWzJCdMXT-B1_cdxaw6KHt3X8"
+            }
+        },
+        {
+            "_id": "23f4737c-9682-4437-89f6-c5ac54f734a1",
+            "colId": "198ef4f0-f335-453a-b0d3-6be08914c053",
+            "containerId": "",
+            "name": "List all Purchase Orders:",
+            "url": "http://localhost:8000/api/purchase_orders/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-04-30T10:12:41.945Z",
+            "modified": "2024-05-01T10:46:45.048Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY2NDAwMzE2LCJpYXQiOjE3MTQ1NjAzMTYsImp0aSI6IjEzZmRmZThiOTY3MzRhZTBhYTcwZTE0MmQwMTc4NzA5IiwidXNlcl9pZCI6MjB9.2SxycDZ4j8bpY2FRaIYWzJCdMXT-B1_cdxaw6KHt3X8"
+            }
+        },
+        {
+            "_id": "5085176c-ad03-417f-9086-8ba739d47e4a",
+            "colId": "198ef4f0-f335-453a-b0d3-6be08914c053",
+            "containerId": "",
+            "name": "Filtering by vendor",
+            "url": "http://localhost:8000/api/purchase_orders/?vendor_id=17",
+            "method": "GET",
+            "sortNum": 25000,
+            "created": "2024-04-30T10:43:59.916Z",
+            "modified": "2024-05-01T10:46:52.524Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "vendor_id",
+                    "value": "17",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY2NDAwMzE2LCJpYXQiOjE3MTQ1NjAzMTYsImp0aSI6IjEzZmRmZThiOTY3MzRhZTBhYTcwZTE0MmQwMTc4NzA5IiwidXNlcl9pZCI6MjB9.2SxycDZ4j8bpY2FRaIYWzJCdMXT-B1_cdxaw6KHt3X8"
+            }
+        },
+        {
+            "_id": "30d7e145-a927-496e-be23-30a524e118b2",
+            "colId": "198ef4f0-f335-453a-b0d3-6be08914c053",
+            "containerId": "",
+            "name": "Retrieve details of a specific Purchase Order:",
+            "url": "http://localhost:8000/api/purchase_orders/16/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-04-30T10:13:46.761Z",
+            "modified": "2024-05-01T10:48:55.617Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY2NDAwMzE2LCJpYXQiOjE3MTQ1NjAzMTYsImp0aSI6IjEzZmRmZThiOTY3MzRhZTBhYTcwZTE0MmQwMTc4NzA5IiwidXNlcl9pZCI6MjB9.2SxycDZ4j8bpY2FRaIYWzJCdMXT-B1_cdxaw6KHt3X8"
+            }
+        },
+        {
+            "_id": "b559db83-e046-4fa7-9276-8c17e8a2f29a",
+            "colId": "198ef4f0-f335-453a-b0d3-6be08914c053",
+            "containerId": "",
+            "name": "Update a Purchase Order:",
+            "url": "http://localhost:8000/api/purchase_orders/16/",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-04-30T10:14:27.030Z",
+            "modified": "2024-05-01T10:49:09.356Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n            \"vendor\": 17,  \n            \"order_date\": \"2024-04-30T12:00:00\",\n            \"delivery_date\": \"2024-05-30T12:00:00\",\n            \"items\": {\"item1\": \"description1\", \"item2\": \"description4\"},\n            \"quantity\": 20,  \n            \"status\": \"completed\" \n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY2NDAwMzE2LCJpYXQiOjE3MTQ1NjAzMTYsImp0aSI6IjEzZmRmZThiOTY3MzRhZTBhYTcwZTE0MmQwMTc4NzA5IiwidXNlcl9pZCI6MjB9.2SxycDZ4j8bpY2FRaIYWzJCdMXT-B1_cdxaw6KHt3X8"
+            }
+        },
+        {
+            "_id": "ed7d52a7-5da6-4184-9209-26c3db78628c",
+            "colId": "198ef4f0-f335-453a-b0d3-6be08914c053",
+            "containerId": "",
+            "name": "Delete a Purchase Order:",
+            "url": "http://localhost:8000/api/purchase_orders/7/",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-04-30T10:18:02.685Z",
+            "modified": "2024-05-01T10:47:10.845Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY2NDAwMzE2LCJpYXQiOjE3MTQ1NjAzMTYsImp0aSI6IjEzZmRmZThiOTY3MzRhZTBhYTcwZTE0MmQwMTc4NzA5IiwidXNlcl9pZCI6MjB9.2SxycDZ4j8bpY2FRaIYWzJCdMXT-B1_cdxaw6KHt3X8"
+            }
+        },
+        {
+            "_id": "b3758df8-7a55-430c-b08f-a442aecd490a",
+            "colId": "198ef4f0-f335-453a-b0d3-6be08914c053",
+            "containerId": "",
+            "name": "Update Acknowledgment",
+            "url": "http://localhost:8000/api/purchase_orders/12/acknowledge/",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-05-01T09:18:05.422Z",
+            "modified": "2024-05-01T10:47:17.376Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY2NDAwMzE2LCJpYXQiOjE3MTQ1NjAzMTYsImp0aSI6IjEzZmRmZThiOTY3MzRhZTBhYTcwZTE0MmQwMTc4NzA5IiwidXNlcl9pZCI6MjB9.2SxycDZ4j8bpY2FRaIYWzJCdMXT-B1_cdxaw6KHt3X8"
+            }
+        }
+    ],
+    "settings": {
+        "runOptions": {
+            "delay": 1000,
+            "iterations": 1,
+            "stopOnFail": true,
+            "dataFilePath": ""
+        }
+    },
+    "ref": "LRrrvF2xYEIGo-1LgiV7vSJUcWb4fAYKCuUCjN9uYck2CeiscKV5-QI1SYy9xuPgqqK3EgI6UuE_LIXklmIZRw"
+}

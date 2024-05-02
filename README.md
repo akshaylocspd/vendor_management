@@ -80,6 +80,11 @@ Now, you should be able to access the Vendor Management System at [http://127.0.
 
 ```
 # API Documentation: Vendor Management
+## Please download the Postman API collection so that you can easily test the APIs below. 
+
+[Click here to download the thunder-collection_Purchase_Order.json file](/thunder-collection_Purchase_Order.json)
+
+[Click here to download the thunder-collection_Vendor_Management.json file](/thunder-collection_Vendor_Management.json)
 
 ## 1. Create Vendor
 - **URL:** http://127.0.0.1:8000/api/vendors/
