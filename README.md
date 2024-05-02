@@ -100,10 +100,10 @@ Now, you should be able to access the Vendor Management System at [http://127.0.
   ```
 - **Authentication:**
   - Type: Bearer Token
-  - Token: [Your Token Here]
+  - Token: []
 
 ## 2. Update Vendor
-- **URL:** http://127.0.0.1:8000/api/vendors/17/
+- **URL:** http://127.0.0.1:8000/api/vendors/{vendor_id}/
 - **Method:** PUT
 - **Request Body:**
   ```json
@@ -127,17 +127,17 @@ Now, you should be able to access the Vendor Management System at [http://127.0.
 - **Authentication:** (same as above)
 
 ## 4. Get Particular Vendor by ID
-- **URL:** http://127.0.0.1:8000/api/vendors/14/
+- **URL:** http://127.0.0.1:8000/api/vendors/{vendor_id}/
 - **Method:** GET
 - **Authentication:** (same as above)
 
 ## 5. Delete Particular Vendor by ID
-- **URL:** http://127.0.0.1:8000/api/vendors/16/
+- **URL:** http://127.0.0.1:8000/api/vendors/{vendor_id}/
 - **Method:** DELETE
 - **Authentication:** (same as above)
 
 ## 6. Retrieve Performance Metrics for a Vendor with ID
-- **URL:** http://localhost:8000/api/vendors/17/performance/
+- **URL:** http://localhost:8000/api/vendors/{vendor_id}/performance/
 - **Method:** GET
 - **Authentication:** (same as above)
 
@@ -178,13 +178,13 @@ Now, you should be able to access the Vendor Management System at [http://127.0.
 - **Response:** JSON Array
 
 ## 4. Retrieve Details of a Specific Purchase Order
-- **URL:** http://localhost:8000/api/purchase_orders/16/
+- **URL:** http://localhost:8000/api/purchase_orders/{po_id}/
 - **Method:** GET
 - **Authentication:** Bearer Token
 - **Response:** JSON
 
 ## 5. Update a Purchase Order
-- **URL:** http://localhost:8000/api/purchase_orders/16/
+- **URL:** http://localhost:8000/api/purchase_orders/{po_id}/
 - **Method:** PUT
 - **Authentication:** Bearer Token
 - **Request Body:**
@@ -207,10 +207,9 @@ Now, you should be able to access the Vendor Management System at [http://127.0.
 - **Response:** Success/Failure Message
 
 ## 7. Update Acknowledgment
-- **URL:** http://localhost:8000/api/purchase_orders/12/acknowledge/
+- **URL:** http://localhost:8000/api/purchase_orders/{po_id}/acknowledge/
 - **Method:** PUT
 - **Authentication:** Bearer Token
 - **Response:** JSON
 - **Authentication:** (same as above)
 ```
-Make sure to replace `[Your Token Here]` with your actual authentication token.
