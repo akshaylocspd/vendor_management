@@ -10,6 +10,11 @@ from rest_framework.generics import *
 from .models import *
 from .serializers import *
 
+from django.http import HttpResponse
+
+def index(request):
+    return HttpResponse("Hello, fatmug.<br> this project is developed by <h2>Akshay Vijay Vairagade</h2>")
+
 class CustomResponseMixin:
     def get_response_data(self, status, message, data=None):
         return {
